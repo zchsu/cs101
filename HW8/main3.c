@@ -1,5 +1,6 @@
 #include<stdio.h>
-void binary(int n) {
+
+void get_binary(int n) {
     
     int i=0, a[32];
     while (n > 0) {
@@ -19,6 +20,6 @@ void binary(int n) {
 }
 int main() {
     int n = 255;
-    binary(n);
+    get_binary(n);
     return 0;
 }
