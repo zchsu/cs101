@@ -8,8 +8,11 @@ void get_binary(int n) {
         i = i + 1;
         n = n / 2;
     }
-    for(int f=4; f>i%4 && i%4!=0; f--) {
+    for(int f=31; f>i-1; f--) {
         printf("0");
+        if(f % 4 == 0 ) {
+            printf(" ");
+        }
     }
     for(i=i-1; i >= 0; i--) {
         printf("%d", a[i]);
